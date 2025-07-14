@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inscription – BiblioSync</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo">
+      <a href="index.html"><img src="assets/Bibliosync logo.png" alt="BiblioSync Logo" /></a>
+    </div>
+    <div class="menu">
+      <a href="index.html">Accueil</a>
+      <a href="catalogue.html">Catalogue</a>
+      <a href="connexion.html">Connexion</a>
+      <a href="inscription.html">Inscription</a>
+      <a href="a-propos.html">À propos</a>
+    </div>
+  </div>
+
+  <div class="hero">
+    <h1>Créer un compte</h1>
+    <form method="POST" action="/api/register" style="max-width: 400px; margin: 0 auto; text-align: left;">
+      <label for="nom">Nom complet</label><br>
+      <input type="text" id="nom" name="nom" required style="width: 100%; padding: 0.5rem;"><br><br>
+
+      <label for="email">Adresse e-mail</label><br>
+      <input type="email" id="email" name="email" required style="width: 100%; padding: 0.5rem;"><br><br>
+
+      <label for="password">Mot de passe</label><br>
+      <input type="password" id="password" name="password" required style="width: 100%; padding: 0.5rem;"><br><br>
+
+      <button type="submit" style="width: 100%;">S’inscrire</button>
+    </form>
+  </div>
+</body>
+</html>
